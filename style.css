@@ -10,9 +10,10 @@ header {
     justify-content: space-between;
     padding-left: 40px;
     padding-right: 40px;
-    padding-top: 30px;
+    padding-top: 25px;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
     padding-bottom: 10px;
+    align-items: center;
 }
 
 .search {
@@ -25,9 +26,7 @@ header {
 }
 
 .head {
-    /* background: pink; */
-    /* height: 200px; */
-    /* width: 355px; */
+    align-items: center;
 }
 
 .bell {
@@ -49,6 +48,10 @@ header {
     background: white;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
     padding: 30px;
+}
+
+.dash {
+    color: blue;
 }
 
 .main {
@@ -110,6 +113,53 @@ header {
     height: 300px;
     margin-top: 25px;
     padding: 20px;
+}
+
+.chart-babe {
+    display: flex;
+    justify-content: space-between;
+}
+
+.chart-babe2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.color1, .color2, .color3 {
+    display: flex;
+    font-size: 13px;
+}
+
+.color1 .ri-square-fill {
+    color: rgb(230, 226, 226);
+    padding-right: 3px;
+}
+
+.color2 .ri-square-fill {
+    color: blue;
+    padding-right: 3px;
+}
+
+.color3 {
+    background: rgb(238, 236, 236);
+    border-radius: 10px;
+    padding: 5px;
+    align-items: center;
+}
+
+.color3 h4 {
+    color: blueviolet;
+    font-size: 12px;
+}
+
+.ri-arrow-down-s-line {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.color1, .color2 {
+    padding-right: 14px;
 }
 
 .employees {
@@ -190,8 +240,7 @@ header {
     display: flex;
     gap: 15px;
     padding-bottom: 40px;
-    /* justify-content: space-between; */
-    /* font-size: 20px; */
+    align-items: center;
 }
 
 .below-calander {
