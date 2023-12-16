@@ -38,11 +38,11 @@
                     </div>
                 </div>
                 <div class="navigate">
-                    <div class="nav dash">
+                    <div class="nav1 dash">
                         <i class="ri-dashboard-line"></i>
                         <p>Dashboard</p>
                     </div>
-                    <div class="nav">
+                    <div class="nav nav2">
                         <i class="ri-bar-chart-2-line"></i>
                         <p>Finance</p>
                     </div>
@@ -136,6 +136,9 @@
                             </div>
                         </div>
                     </div>
+                    <div class="canvas">
+                        <canvas id="myChart"></canvas>
+                    </div>
                 </div>
                 <div class="employees">
                     <div class="status">
@@ -154,46 +157,78 @@
                             <p>Status</p>
                         </div>
                         <div class="people">
-                            <img src="" alt="">
-                            <b>Justin Lipshutz</b>
+                            <div class="img-name">
+                                <img src="images/elsa3.jpeg" alt="img">
+                                <b>Marcus Cuhane</b>
+                            </div>
                             <b>Marketing</b>
                             <b>22</b>
                             <b>+100%</b>
-                            <div class="Permanent">
+                            <div class="permanent">
                                 <p>Permanent</p>
                             </div>
                         </div>
                         <div class="people">
-                            <img src="" alt="">
-                            <b>Marcus Cuhane</b>
+                            <div class="img-name">
+                                <img src="images/elsa3.jpeg" alt="img">
+                                <b>Marcus Cuhane</b>
+                            </div>
                             <b>Finance</b>
                             <b>24</b>
                             <b>+95%</b>
-                            <div class="Contract">
+                            <div class="contract">
                                 <p>Contract</p>
                             </div>
                         </div>
                         <div class="people">
-                            <img src="" alt="">
-                            <b>Leo Stranton</b>
+                            <div class="img-name">
+                                <img src="images/elsa3.jpeg" alt="img">
+                                <b>Marcus Cuhane</b>
+                            </div>
                             <b>R&D</b>
                             <b>28</b>
                             <b>+89%</b>
-                            <div class="Permanent">
+                            <div class="permanent">
                                 <p>Permanent</p>
                             </div>
                         </div>
                     </div>
                     <div class="composition">
                         <h4>Employee Composition</h4>
-                        <div>
-
+                        <div class="image">
+                            <img src="images/WhatsApp Image 2023-12-16 at 6.03.28 PM.jpeg" alt="">
                         </div>
-                        <!-- <p>856 employee total</p> -->
+                        <p>856 employee total</p>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+        <script>
+            const ctx = document.getElementById('myChart');
+
+            new Chart(ctx, {
+                type: 'bar',
+                data: {
+                labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+                datasets: [{
+                label: '# of Votes',
+                data: [12, 19, 3, 5, 2, 3],
+                borderWidth: 1
+                }]
+            },
+
+            options: {
+                scales: {
+                y: {
+                    beginAtZero: true
+                }
+                }
+                }
+            });
+        </script>
+
 </body>
 </html>

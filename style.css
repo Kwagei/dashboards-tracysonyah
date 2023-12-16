@@ -53,6 +53,7 @@ header {
 .dash {
     background: gainsboro;
     color: blue;
+    padding: 10px;
 }
 
 .main {
@@ -218,6 +219,20 @@ header {
     align-items: center;
 }
 
+.nav1 {
+    display: flex;
+    align-items: center;
+}
+
+.nav1 i {
+    padding-right: 10px;
+    
+}
+
+.nav2 {
+    padding-top: 40px;
+}
+
 .below-calander {
     border-bottom: 1px dashed lightgray;
     margin-bottom: 40px;
@@ -247,13 +262,16 @@ header {
     display: flex;
     justify-content: space-between;
     width: 45rem;
+    align-items: center;
 }
 
 .filter {
     display: flex;
-    /* background: lightgrey; */
+    background: rgb(245, 243, 243);
     color: blue;
-    /* border-radius: 10px; */
+    border-radius: 10px;
+    padding: 5px;
+    font-size: 15px;
 }
 
 .ri-equalizer-fill {
@@ -270,19 +288,59 @@ header {
     border-bottom: 1px solid lightgray;
 }
 
+.permanent p {
+    color: rgb(10, 218, 10);
+    background-color: rgb(10, 238, 162);
+    border-radius: 5px;
+    padding: 3px;
+    font-size: 15px;
+}
+
+.contract {
+    padding: 3px;
+    border-radius: 5px;
+    background-color: rgb(218, 216, 216);
+}
+
 .people {
     display: flex;
     justify-content: space-between;
-    /* flex-direction: column; */
+    padding-top: 10px;
+    align-items: center;
+}
+
+.img-name img {
+    height: 35px;
+    width: 35px;
+    border-radius: 50px;
+}
+
+.img-name {
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
 
 .composition {
     background: white;
     width: 21rem;
-    height: 250px;
     padding: 25px;
 }
 
+.image {
+    display: flex;
+    flex-direction: column;
+}
+
+.chart {
+    height: 350px;
+    /* width: 55rem; */
+}
+
+
+.canvas {
+    height: 19rem;
+}
 
 
 
